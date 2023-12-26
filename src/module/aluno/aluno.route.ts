@@ -1,5 +1,5 @@
-const express = require('express');
-const alunoModel = require('./aluno.model');
+import express from 'express';
+import alunoModel from './aluno.model';
 
 const router = express.Router();
 
@@ -13,4 +13,4 @@ router.post('/', async (req, res) => {
   return res.status(200).json({ data });
 });
 
-module.exports = router;
+export default router;
