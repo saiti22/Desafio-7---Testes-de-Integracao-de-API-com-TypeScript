@@ -13,4 +13,8 @@ router.post('/', async (req, res) => {
   return res.status(200).json({ data });
 });
 
+router.get('/teste', async (_, res) => {
+  return res.status(200).send('Funcionou!')
+});
+
 export default router;
