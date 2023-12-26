@@ -5,6 +5,8 @@ Sendo elas:
   DB_PASSWORD=''
   DB_DATABASE=''
 
+Após a configuração, basta executar o comando "npm test".
+
 Para os testes de rota, foi criado um arquivo "route.rest" com um Get e um Post.
 
 Alterei também a função de Post para não aceitar valores vazios.
