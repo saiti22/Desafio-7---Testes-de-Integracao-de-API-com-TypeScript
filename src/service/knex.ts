@@ -3,7 +3,7 @@ import knexConfig from "../config/knex";
 
 let conn: any;
 
-function conectar(busca: String) {
+function conectar() {
   if (conn) {
     return conn;
   }

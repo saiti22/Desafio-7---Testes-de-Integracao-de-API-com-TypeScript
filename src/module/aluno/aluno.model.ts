@@ -1,11 +1,16 @@
 import knex from "../../service/knex";
 
 const getAll = async () => {
-  return await knex('aluno').select();
+  return await knex().select("*").from("aluno");
 };
 
 const store = async (params: any) => {
-  return await knex('aluno').insert(params);
+  try{
+    return await knex().insert(params).into("aluno");
+  }catch{
+    return "Entrada inválida"
+  }
+  
 };
 
 export default {

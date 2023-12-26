@@ -1,0 +1,11 @@
+GET http://localhost:8080/aluno
+
+###
+
+POST http://localhost:8080/aluno
+Content-Type: application/json
+
+{
+    "nome": "nome",
+    "cpf": "12345678900"
+}
